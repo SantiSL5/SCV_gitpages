@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modify Html</title>
+        <title>Modify css</title>
         <style>
             header {
               background-image: url(./img/backgroud_header.jpg);
@@ -77,11 +77,10 @@
             <div><a href="./modifycss.html">Modificar estilos CSS</a></div>
           </nav>
         
-        <h1>Modify Html</h1>
+        <h1>Modify CSS</h1>
 
-        <p id="demo">This text will be modified with the text inserted by pressing the button</p>
+        <p id="demo">This text will be red by pressing the button modifying the css</p>
 
-        <input type="text" id="input_modify_html">
-        <button type="button" onclick='document.getElementById("demo").innerHTML = document.getElementById("input_modify_html").value'>Button</button>
+        <button type="button" onclick='document.getElementById("demo").style="color:red"'>Button</button>
     </body>
 </html>
