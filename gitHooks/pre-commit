@@ -1,0 +1,9 @@
+#!/bin/sh
+
+eslint=`eslint --plugin html --ext .html .`
+eslint --plugin html --ext .html .
+
+if ! [ "${eslint}" == "" ]; then
+	echo "eslint ha detectado un error"
+	exit 1
+fi

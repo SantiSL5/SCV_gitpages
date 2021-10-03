@@ -2,7 +2,12 @@
   "name": " ",
   "version": "0.0.1",
   "description": "",
-  "keywords": [""],
+  "keywords": [
+    ""
+  ],
+  "plugins": [
+    "html"
+  ],
   "license": "",
   "author": "",
   "scripts": {
@@ -12,6 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "eslint-plugin-html": "^6.2.0",
     "parcel-bundler": "^1.12.5"
   }
 }

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+msg="$1"
+
+regex="^MOTIVO DEL COMMIT:.*IMPLEMENTACION:.*.$"
+
+if [[ $1 =~ $regex ]];then
+	echo "Tu commit debe contener 'MOTIVO DEL COMMIT: IMPLEMENTACION:"
+	exit 1
+fi

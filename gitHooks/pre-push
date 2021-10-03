@@ -1,0 +1,8 @@
+#!/bin/sh
+
+VAR=$(git diff --cached | egrep '[áâàéèêíìîóòôúùû]')
+
+if [ ! -z "$VAR" ]; then
+  echo "Insultos no permitidos en los commits, ABORTANDO COMMIT"
+  exit 1
+fi
