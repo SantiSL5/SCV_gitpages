@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modify css</title>
+        <style>
+            header {
+              background-image: url(./img/backgroud_header.jpg);
+              background-repeat: no-repeat;
+              height: 100px;
+              width: 100%;
+              text-align: center;
+              margin: 0px;
+              padding: 0px;
+            }
+        
+            header p {
+              padding:0%;
+              margin: 0%;
+              padding-top: 30px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+        
+            nav {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              text-align: center;
+              height: 100px;
+            }
+        
+            nav div {
+              border: 1px solid black;
+              text-align: center;
+              width: 100%;
+              height: 100px;
+            }
+        
+            nav a {
+              color: black;
+              text-decoration: none;
+            }
+        
+            .info {
+              display: flex;
+              padding: 50px;
+              border: 1px solid black;
+            }
+        
+            .info img {
+              height: 200px;
+            }
+        
+            footer {
+              height: 100px;
+              text-align: center;
+              border: 1px solid black;
+            }
+        
+            footer img {
+              height: 100px;
+            }
+        
+          </style>
+        </head>
+        
+        <body>
+          <header>
+            <p>Curso de javascript</p>
+          </header>
+          <nav>
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="">Modificar contenido HTML</a></div>
+            <div><a href="">Modificar estilos CSS</a></div>
+            <div><a href="">Modificar atributos HTML</a></div>
+          </nav>
+        
+        <h1>Modify CSS</h1>
+
+        <p id="demo">This text will be red by pressing the button modifying the css</p>
+
+        <button type="button" onclick='document.getElementById("demo").style="color:red"'>Button</button>
+    </body>
+</html>
